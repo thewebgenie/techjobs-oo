@@ -8,7 +8,29 @@
 
 <div class="container body-content">
 
-    <!-- // TODO #2 - display the job fields, one per row -->
+    <!-- //TODO #2 - display the job fields, one per row XX-->
+    <table class="job-listing">
+        <tr>
+            <td>Name</td>
+            <td th:text="${someJob.getName()}"></td>
+        </tr>
+        <tr>
+            <td>Employer</td>
+            <td th:text="${someJob.getEmployer()}"></td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td th:text="${someJob.getLocation()}"></td>
+        </tr>
+        <tr>
+            <td>Position Type</td>
+            <td th:text="${someJob.getPositionType()}"></td>
+        </tr>
+        <tr>
+            <td>Skill</td>
+            <td th:text="${someJob.getCoreCompetency()}"></td>
+        </tr>
+    </table>
 
 </div>
 
