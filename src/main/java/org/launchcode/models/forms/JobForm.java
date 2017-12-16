@@ -27,16 +27,13 @@ public class JobForm {
         with correct validation attributes and display names.
         Don't forget to add getters and setters
      */
-    @NotNull
-    @Size(min=1, message = "Location may not be empty")
+
     private Location location;
 
-    @NotNull
-    @Size(min=1, message = "Core Competency may not be empty")
+
     private CoreCompetency coreCompetency;
 
-    @NotNull
-    @Size(min=1, message = "Position Type may not be empty")
+
     private PositionType positionType;
 
     private ArrayList<Employer> employers;
